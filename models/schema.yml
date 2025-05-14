@@ -31,11 +31,25 @@ sources:
         identifier: raw_gz_ship
         description: Shipping data from Greenweez
 
-version: 2
+      - name: raw_gz_adwords
+        alias: Google
+        description: Google Ads campaign data
+
+      - name: raw_gz_bing
+        alias: Bing
+        description: Bing Ads campaign data
+
+      - name: raw_gz_criteo
+        alias: Criteo
+        description: Criteo Ads campaign data
+
+      - name: raw_gz_facebook
+        alias: Facebook
+        description: Facebook Ads campaign data
 
 models:
   - name: int_sales_margin
-    description: margin calculation per order
+    description: Margin calculation per order
     columns:
       - name: orders_id
         description: orders key
